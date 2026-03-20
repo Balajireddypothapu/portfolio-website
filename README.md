@@ -27,7 +27,7 @@ A stunning personal portfolio website with a premium dark glassmorphism design, 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/portfolio-website.git
+git clone https://github.com/Balajireddypothapu/portfolio-website.git
 cd portfolio-website
 ```
 
@@ -35,7 +35,11 @@ cd portfolio-website
 
 ## 📸 Screenshots
 
-> Add screenshots here after deployment
+### Hero Section
+![Hero Section](screenshots/hero.png)
+
+### Skills & Technologies
+![Skills Section](screenshots/skills.png)
 
 ## 📜 License
 

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Balaji Reddy Pothapu — Full-Stack Developer & AI Enthusiast. Portfolio showcasing web development, AI/ML, and software engineering projects.">
+    <title>Balaji Reddy Pothapu | Full-Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="particles" id="particles"></div>
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>BRP<span class="logo-bracket"> /&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-circle pulse-dot"></i> Available for Opportunities
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-greeting">Hello, I'm</span>
+                <span class="hero-name" id="heroName">Balaji Reddy Pothapu</span>
+            </h1>
+            <div class="hero-typewriter">
+                <span class="typewriter-prefix">I build </span>
+                <span class="typewriter-text" id="typewriterText"></span>
+                <span class="typewriter-cursor">|</span>
+            </div>
+            <p class="hero-description">
+                Full-Stack Developer & AI Enthusiast crafting elegant digital experiences 
+                with modern technologies. Passionate about turning ideas into impactful software.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> View My Work
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-envelope"></i> Get In Touch
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="4">0</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="8">0</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="5">0</span>
+                    <span class="stat-label">Certifications</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="code-title">developer.js</span>
+                </div>
+                <pre class="code-body"><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-key">name</span>: <span class="code-string">"Balaji Reddy"</span>,
+  <span class="code-key">role</span>: <span class="code-string">"Full-Stack Dev"</span>,
+  <span class="code-key">skills</span>: [
+    <span class="code-string">"JavaScript"</span>,
+    <span class="code-string">"Python"</span>,
+    <span class="code-string">"React"</span>,
+    <span class="code-string">"Node.js"</span>
+  ],
+  <span class="code-key">passion</span>: <span class="code-string">"Building the future"</span>,
+  <span class="code-method">code</span>: () => <span class="code-string">"☕ → 💻 → 🚀"</span>
+};</code></pre>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-user"></i> About Me</span>
+                <h2 class="section-title">Turning Coffee Into Code</h2>
+                <p class="section-subtitle">A glimpse into who I am and what drives me</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card glass-card">
+                    <div class="about-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Education</h3>
+                    <p>Computer Science student with a passion for building real-world applications and solving complex problems through code.</p>
+                </div>
+                <div class="about-card glass-card">
+                    <div class="about-icon"><i class="fas fa-code"></i></div>
+                    <h3>Development</h3>
+                    <p>Experienced in full-stack web development using JavaScript, Python, and modern frameworks. I love creating clean, efficient, and scalable solutions.</p>
+                </div>
+                <div class="about-card glass-card">
+                    <div class="about-icon"><i class="fas fa-brain"></i></div>
+                    <h3>AI & Innovation</h3>
+                    <p>Exploring AI/ML technologies and integrating intelligent features into applications — from stock analysis to natural language processing.</p>
+                </div>
+                <div class="about-card glass-card">
+                    <div class="about-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Goals</h3>
+                    <p>Aspiring to become a senior developer at a top tech company, contributing to products that impact millions of users worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-cogs"></i> My Skills</span>
+                <h2 class="section-title">Technologies I Work With</h2>
+                <p class="section-subtitle">Constantly learning and expanding my toolkit</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card glass-card" data-skill="JavaScript">
+                    <div class="skill-icon" style="color: #F7DF1E;"><i class="fab fa-js-square"></i></div>
+                    <h4>JavaScript</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                </div>
+                <div class="skill-card glass-card" data-skill="Python">
+                    <div class="skill-icon" style="color: #3776AB;"><i class="fab fa-python"></i></div>
+                    <h4>Python</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                </div>
+                <div class="skill-card glass-card" data-skill="React">
+                    <div class="skill-icon" style="color: #61DAFB;"><i class="fab fa-react"></i></div>
+                    <h4>React</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                </div>
+                <div class="skill-card glass-card" data-skill="Node.js">
+                    <div class="skill-icon" style="color: #339933;"><i class="fab fa-node-js"></i></div>
+                    <h4>Node.js</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                </div>
+                <div class="skill-card glass-card" data-skill="HTML5">
+                    <div class="skill-icon" style="color: #E34F26;"><i class="fab fa-html5"></i></div>
+                    <h4>HTML5</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                </div>
+                <div class="skill-card glass-card" data-skill="CSS3">
+                    <div class="skill-icon" style="color: #1572B6;"><i class="fab fa-css3-alt"></i></div>
+                    <h4>CSS3</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+                </div>
+                <div class="skill-card glass-card" data-skill="SQL">
+                    <div class="skill-icon" style="color: #4479A1;"><i class="fas fa-database"></i></div>
+                    <h4>SQL</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                </div>
+                <div class="skill-card glass-card" data-skill="Git">
+                    <div class="skill-icon" style="color: #F05032;"><i class="fab fa-git-alt"></i></div>
+                    <h4>Git</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-briefcase"></i> My Projects</span>
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-subtitle">Projects that showcase my skills and passion</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/YOUR_GITHUB_USERNAME/taskflow-app" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>TaskFlow</h3>
+                        <p>Full-stack Kanban task manager with drag-and-drop, RESTful API, and persistent SQLite storage. Features filtering, categories, and real-time updates.</p>
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/YOUR_GITHUB_USERNAME/stockpulse-ai" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>StockPulse AI</h3>
+                        <p>AI-powered stock analysis dashboard with sentiment analysis, interactive Chart.js visualizations, and real-time data from financial APIs.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/YOUR_GITHUB_USERNAME/chatconnect" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>ChatConnect</h3>
+                        <p>Real-time chat application with room support, user presence indicators, typing indicators, and WebSocket-powered instant messaging.</p>
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">WebSocket</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/YOUR_GITHUB_USERNAME/portfolio-website" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>This stunning personal portfolio featuring glassmorphism design, smooth animations, particle effects, and a fully responsive layout.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section certifications" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-award"></i> Certifications</span>
+                <h2 class="section-title">Professional Credentials</h2>
+                <p class="section-subtitle">Continuous learning and professional development</p>
+            </div>
+            <div class="cert-timeline">
+                <div class="cert-item glass-card">
+                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
+                    <div class="cert-details">
+                        <h4>AWS Certified Cloud Practitioner</h4>
+                        <p>Amazon Web Services</p>
+                        <span class="cert-status in-progress"><i class="fas fa-spinner"></i> In Progress</span>
+                    </div>
+                </div>
+                <div class="cert-item glass-card">
+                    <div class="cert-icon"><i class="fab fa-free-code-camp"></i></div>
+                    <div class="cert-details">
+                        <h4>Responsive Web Design</h4>
+                        <p>freeCodeCamp</p>
+                        <span class="cert-status planned"><i class="fas fa-clock"></i> Planned</span>
+                    </div>
+                </div>
+                <div class="cert-item glass-card">
+                    <div class="cert-icon"><i class="fab fa-free-code-camp"></i></div>
+                    <div class="cert-details">
+                        <h4>JavaScript Algorithms & Data Structures</h4>
+                        <p>freeCodeCamp</p>
+                        <span class="cert-status planned"><i class="fas fa-clock"></i> Planned</span>
+                    </div>
+                </div>
+                <div class="cert-item glass-card">
+                    <div class="cert-icon"><i class="fab fa-google"></i></div>
+                    <div class="cert-details">
+                        <h4>Google Data Analytics</h4>
+                        <p>Google / Coursera</p>
+                        <span class="cert-status planned"><i class="fas fa-clock"></i> Planned</span>
+                    </div>
+                </div>
+                <div class="cert-item glass-card">
+                    <div class="cert-icon"><i class="fas fa-database"></i></div>
+                    <div class="cert-details">
+                        <h4>MongoDB M001: Basics</h4>
+                        <p>MongoDB University</p>
+                        <span class="cert-status planned"><i class="fas fa-clock"></i> Planned</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-paper-plane"></i> Contact</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Feel free to reach out for collaborations or just a friendly chat</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card glass-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>[YOUR_EMAIL]@gmail.com</p>
+                    </div>
+                    <div class="contact-card glass-card">
+                        <i class="fab fa-linkedin"></i>
+                        <h4>LinkedIn</h4>
+                        <p>linkedin.com/in/[YOUR_LINKEDIN]</p>
+                    </div>
+                    <div class="contact-card glass-card">
+                        <i class="fab fa-github"></i>
+                        <h4>GitHub</h4>
+                        <p>github.com/[YOUR_GITHUB]</p>
+                    </div>
+                    <div class="contact-card glass-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location</h4>
+                        <p>United States</p>
+                    </div>
+                </div>
+                <form class="contact-form glass-card" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>BRP<span class="logo-bracket"> /&gt;</span>
+                </a>
+                <div class="footer-socials">
+                    <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:YOUR_EMAIL@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-text">&copy; 2026 Balaji Reddy Pothapu. Built with ❤️ and JavaScript.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

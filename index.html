@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Balaji Reddy Pothapu — Full-Stack Developer & AI Enthusiast. Portfolio showcasing web development, AI/ML, and software engineering projects.">
+    <meta name="description"
+        content="Balaji Reddy Pothapu — Full-Stack Developer & AI Enthusiast. Portfolio showcasing web development, AI/ML, and software engineering projects.">
     <title>Balaji Reddy Pothapu | Full-Stack Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Animated Background -->
     <div class="bg-animation">
@@ -55,7 +60,7 @@
                 <span class="typewriter-cursor">|</span>
             </div>
             <p class="hero-description">
-                Full-Stack Developer & AI Enthusiast crafting elegant digital experiences 
+                Full-Stack Developer & AI Enthusiast crafting elegant digital experiences
                 with modern technologies. Passionate about turning ideas into impactful software.
             </p>
             <div class="hero-cta">
@@ -82,27 +87,35 @@
             </div>
         </div>
         <div class="hero-visual">
-            <div class="code-window">
-                <div class="code-header">
-                    <div class="code-dots">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
                         <span class="dot red"></span>
                         <span class="dot yellow"></span>
                         <span class="dot green"></span>
                     </div>
-                    <span class="code-title">developer.js</span>
+                    <span class="terminal-title">bash — 80x24</span>
                 </div>
-                <pre class="code-body"><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
-  <span class="code-key">name</span>: <span class="code-string">"Balaji Reddy"</span>,
-  <span class="code-key">role</span>: <span class="code-string">"Full-Stack Dev"</span>,
-  <span class="code-key">skills</span>: [
-    <span class="code-string">"JavaScript"</span>,
-    <span class="code-string">"Python"</span>,
-    <span class="code-string">"React"</span>,
-    <span class="code-string">"Node.js"</span>
-  ],
-  <span class="code-key">passion</span>: <span class="code-string">"Building the future"</span>,
-  <span class="code-method">code</span>: () => <span class="code-string">"☕ → 💻 → 🚀"</span>
-};</code></pre>
+                <div class="terminal-body" id="terminalBody">
+                    <div class="terminal-line"><span class="terminal-prompt">$</span> <span
+                            class="terminal-command">whoami</span></div>
+                    <div class="terminal-output">balajireddy</div>
+                    <div class="terminal-line"><span class="terminal-prompt">$</span> <span class="terminal-command">ls
+                            -l projects/</span></div>
+                    <div class="terminal-output">
+                        drwxr-xr-x stockpulse-ai<br>
+                        drwxr-xr-x weatherpulse<br>
+                        drwxr-xr-x taskflow-app<br>
+                        drwxr-xr-x chatconnect<br>
+                        drwxr-xr-x pyautomate<br>
+                        drwxr-xr-x portfolio
+                    </div>
+                    <div class="terminal-line"><span class="terminal-prompt">$</span> <span
+                            class="terminal-command">python3 --version</span></div>
+                    <div class="terminal-output">Python 3.12.0</div>
+                    <div class="terminal-line"><span class="terminal-prompt">$</span> <span
+                            class="terminal-cursor">█</span></div>
+                </div>
             </div>
         </div>
         <a href="#about" class="scroll-indicator">
@@ -125,22 +138,26 @@
                 <div class="about-card glass-card">
                     <div class="about-icon"><i class="fas fa-graduation-cap"></i></div>
                     <h3>Education</h3>
-                    <p>Computer Science student with a passion for building real-world applications and solving complex problems through code.</p>
+                    <p>Computer Science student with a passion for building real-world applications and solving complex
+                        problems through code.</p>
                 </div>
                 <div class="about-card glass-card">
                     <div class="about-icon"><i class="fas fa-code"></i></div>
                     <h3>Development</h3>
-                    <p>Experienced in full-stack web development using JavaScript, Python, and modern frameworks. I love creating clean, efficient, and scalable solutions.</p>
+                    <p>Experienced in full-stack web development using JavaScript, Python, and modern frameworks. I love
+                        creating clean, efficient, and scalable solutions.</p>
                 </div>
                 <div class="about-card glass-card">
                     <div class="about-icon"><i class="fas fa-brain"></i></div>
                     <h3>AI & Innovation</h3>
-                    <p>Exploring AI/ML technologies and integrating intelligent features into applications — from stock analysis to natural language processing.</p>
+                    <p>Exploring AI/ML technologies and integrating intelligent features into applications — from stock
+                        analysis to natural language processing.</p>
                 </div>
                 <div class="about-card glass-card">
                     <div class="about-icon"><i class="fas fa-rocket"></i></div>
                     <h3>Goals</h3>
-                    <p>Aspiring to become a senior developer at a top tech company, contributing to products that impact millions of users worldwide.</p>
+                    <p>Aspiring to become a senior developer at a top tech company, contributing to products that impact
+                        millions of users worldwide.</p>
                 </div>
             </div>
         </div>
@@ -158,42 +175,58 @@
                 <div class="skill-card glass-card" data-skill="JavaScript">
                     <div class="skill-icon" style="color: #F7DF1E;"><i class="fab fa-js-square"></i></div>
                     <h4>JavaScript</h4>
-                    <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
                 </div>
                 <div class="skill-card glass-card" data-skill="Python">
                     <div class="skill-icon" style="color: #3776AB;"><i class="fab fa-python"></i></div>
                     <h4>Python</h4>
-                    <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
                 </div>
                 <div class="skill-card glass-card" data-skill="React">
                     <div class="skill-icon" style="color: #61DAFB;"><i class="fab fa-react"></i></div>
                     <h4>React</h4>
-                    <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="70"></div>
+                    </div>
                 </div>
                 <div class="skill-card glass-card" data-skill="Node.js">
                     <div class="skill-icon" style="color: #339933;"><i class="fab fa-node-js"></i></div>
                     <h4>Node.js</h4>
-                    <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75"></div>
+                    </div>
                 </div>
                 <div class="skill-card glass-card" data-skill="HTML5">
                     <div class="skill-icon" style="color: #E34F26;"><i class="fab fa-html5"></i></div>
                     <h4>HTML5</h4>
-                    <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
                 </div>
                 <div class="skill-card glass-card" data-skill="CSS3">
                     <div class="skill-icon" style="color: #1572B6;"><i class="fab fa-css3-alt"></i></div>
                     <h4>CSS3</h4>
-                    <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="88"></div>
+                    </div>
                 </div>
                 <div class="skill-card glass-card" data-skill="SQL">
                     <div class="skill-icon" style="color: #4479A1;"><i class="fas fa-database"></i></div>
                     <h4>SQL</h4>
-                    <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75"></div>
+                    </div>
                 </div>
                 <div class="skill-card glass-card" data-skill="Git">
                     <div class="skill-icon" style="color: #F05032;"><i class="fab fa-git-alt"></i></div>
                     <h4>Git</h4>
-                    <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -208,104 +241,158 @@
                 <p class="section-subtitle">Projects that showcase my skills and passion</p>
             </div>
             <div class="projects-grid">
-                <!-- Project 1 -->
+                <!-- Project 1: StockPulse AI -->
                 <div class="project-card glass-card">
                     <div class="project-image">
-                        <div class="project-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                            <i class="fas fa-tasks"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/YOUR_GITHUB_USERNAME/taskflow-app" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>TaskFlow</h3>
-                        <p>Full-stack Kanban task manager with drag-and-drop, RESTful API, and persistent SQLite storage. Features filtering, categories, and real-time updates.</p>
-                        <div class="project-tags">
-                            <span class="tag">Node.js</span>
-                            <span class="tag">Express</span>
-                            <span class="tag">SQLite</span>
-                            <span class="tag">REST API</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card glass-card">
-                    <div class="project-image">
-                        <div class="project-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
                             <i class="fas fa-chart-line"></i>
                         </div>
                         <div class="project-overlay">
-                            <a href="https://github.com/YOUR_GITHUB_USERNAME/stockpulse-ai" class="project-link" target="_blank">
+                            <a href="https://github.com/Balajireddypothapu/stockpulse-ai" class="project-link"
+                                target="_blank">
                                 <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
                     </div>
                     <div class="project-info">
                         <h3>StockPulse AI</h3>
-                        <p>AI-powered stock analysis dashboard with sentiment analysis, interactive Chart.js visualizations, and real-time data from financial APIs.</p>
+                        <p>AI-powered stock analysis dashboard with sentiment analysis, interactive Chart.js
+                            visualizations, and real-time data integration.</p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
                             <span class="tag">Flask</span>
                             <span class="tag">Pandas</span>
-                            <span class="tag">Chart.js</span>
+                            <span class="tag">AI/ML</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
+                <!-- Project 2: WeatherPulse -->
                 <div class="project-card glass-card">
                     <div class="project-image">
-                        <div class="project-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Balajireddypothapu/weatherpulse" class="project-link"
+                                target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>WeatherPulse</h3>
+                        <p>Real-time weather dashboard with 7-day forecasts, air quality monitoring, and a sleek
+                            glassmorphism UI for global weather tracking.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">REST API</span>
+                            <span class="tag">Glassmorphism</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: TaskFlow -->
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Balajireddypothapu/taskflow-app" class="project-link"
+                                target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>TaskFlow</h3>
+                        <p>Full-stack Kanban manager with drag-and-drop, RESTful API, and SQLite persistence.
+                            Streamlining workflow management with precision.</p>
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">Kanban</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: PyAutomate -->
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #a78bfa 0%, #f472b6 100%);">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Balajireddypothapu/pyautomate" class="project-link"
+                                target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>PyAutomate</h3>
+                        <p>Python automation suite featuring a Resume AI Keyword Matcher, text analyzer, password
+                            generator, and system resource monitor.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">Automation</span>
+                            <span class="tag">Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: ChatConnect -->
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
                             <i class="fas fa-comments"></i>
                         </div>
                         <div class="project-overlay">
-                            <a href="https://github.com/YOUR_GITHUB_USERNAME/chatconnect" class="project-link" target="_blank">
+                            <a href="https://github.com/Balajireddypothapu/chatconnect" class="project-link"
+                                target="_blank">
                                 <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
                     </div>
                     <div class="project-info">
                         <h3>ChatConnect</h3>
-                        <p>Real-time chat application with room support, user presence indicators, typing indicators, and WebSocket-powered instant messaging.</p>
+                        <p>Instant messaging platform with room support, user presence, and real-time bidirectional
+                            communication via WebSockets.</p>
                         <div class="project-tags">
                             <span class="tag">Node.js</span>
-                            <span class="tag">WebSocket</span>
-                            <span class="tag">JavaScript</span>
+                            <span class="tag">WebSockets</span>
+                            <span class="tag">Real-Time</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 4 -->
+                <!-- Project 6: Portfolio Website -->
                 <div class="project-card glass-card">
                     <div class="project-image">
-                        <div class="project-placeholder" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">
-                            <i class="fas fa-globe"></i>
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">
+                            <i class="fas fa-laptop-code"></i>
                         </div>
                         <div class="project-overlay">
-                            <a href="https://github.com/YOUR_GITHUB_USERNAME/portfolio-website" class="project-link" target="_blank">
+                            <a href="https://github.com/Balajireddypothapu/portfolio-website" class="project-link"
+                                target="_blank">
                                 <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
                     </div>
                     <div class="project-info">
                         <h3>Portfolio Website</h3>
-                        <p>This stunning personal portfolio featuring glassmorphism design, smooth animations, particle effects, and a fully responsive layout.</p>
+                        <p>Modern personal portfolio with glassmorphism, smooth animations, and interactive terminal
+                            built to showcase development capabilities.</p>
                         <div class="project-tags">
                             <span class="tag">HTML5</span>
                             <span class="tag">CSS3</span>
@@ -383,22 +470,22 @@
                     <div class="contact-card glass-card">
                         <i class="fas fa-envelope"></i>
                         <h4>Email</h4>
-                        <p>[YOUR_EMAIL]@gmail.com</p>
+                        <p>pothapubalajireddy26@gmail.com</p>
                     </div>
                     <div class="contact-card glass-card">
                         <i class="fab fa-linkedin"></i>
                         <h4>LinkedIn</h4>
-                        <p>linkedin.com/in/[YOUR_LINKEDIN]</p>
+                        <p>linkedin.com/in/balajireddypothapu</p>
                     </div>
                     <div class="contact-card glass-card">
                         <i class="fab fa-github"></i>
                         <h4>GitHub</h4>
-                        <p>github.com/[YOUR_GITHUB]</p>
+                        <p>github.com/Balajireddypothapu</p>
                     </div>
                     <div class="contact-card glass-card">
                         <i class="fas fa-map-marker-alt"></i>
                         <h4>Location</h4>
-                        <p>United States</p>
+                        <p>Frisco, TX, United States</p>
                     </div>
                 </div>
                 <form class="contact-form glass-card" id="contactForm">
@@ -445,4 +532,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

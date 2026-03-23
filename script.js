@@ -164,7 +164,15 @@ function animateCounters() {
     const counters = document.querySelectorAll('.stat-number');
 
     counters.forEach(counter => {
-        const target = parseInt(counter.getAttribute('data-count'));
+        let countTarget = parseInt(counter.getAttribute('data-count'));
+
+        // Dynamic update for projects count
+        if (counter.parentElement.querySelector('.stat-label').textContent === 'Projects') {
+            countTarget = 6;
+            counter.setAttribute('data-count', '6');
+        }
+
+        const target = countTarget;
         const current = parseInt(counter.textContent);
 
         if (current < target) {
@@ -204,7 +212,7 @@ contactForm.addEventListener('submit', (e) => {
     const message = document.getElementById('message').value;
 
     // Create mailto link as fallback
-    const mailtoLink = `mailto:YOUR_EMAIL@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name}\nEmail: ${email}\n\n${message}`)}`;
+    const mailtoLink = `mailto:pothapubalajireddy26@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name}\nEmail: ${email}\n\n${message}`)}`;
 
     window.location.href = mailtoLink;
 
@@ -242,6 +250,56 @@ if (heroName) {
         heroName.style.backgroundPosition = `${x}% ${y}%`;
     });
 }
+
+// ===== Terminal Animation =====
+const terminalLines = [
+    { type: 'command', text: 'whoami', output: 'balajireddy' },
+    { type: 'command', text: 'ls -l projects/', output: 'drwxr-xr-x stockpulse-ai\ndrwxr-xr-x weatherpulse\ndrwxr-xr-x taskflow-app\ndrwxr-xr-x chatconnect\ndrwxr-xr-x pyautomate\ndrwxr-xr-x portfolio' },
+    { type: 'command', text: 'python3 --version', output: 'Python 3.12.0' },
+    { type: 'command', text: 'git status', output: 'On branch main\nYour branch is up to date with \'origin/main\'.\n\nnothing to commit, working tree clean' }
+];
+
+const terminalBody = document.getElementById('terminalBody');
+
+async function runTerminal() {
+    if (!terminalBody) return;
+
+    terminalBody.innerHTML = '';
+
+    for (const line of terminalLines) {
+        const lineEl = document.createElement('div');
+        lineEl.className = 'terminal-line';
+        lineEl.innerHTML = `<span class="terminal-prompt">$</span> <span class="terminal-command"></span>`;
+        terminalBody.appendChild(lineEl);
+
+        const cmdEl = lineEl.querySelector('.terminal-command');
+        for (const char of line.text) {
+            cmdEl.textContent += char;
+            await new Promise(r => setTimeout(r, 50 + Math.random() * 50));
+        }
+
+        await new Promise(r => setTimeout(r, 400));
+
+        const outputEl = document.createElement('div');
+        outputEl.className = 'terminal-output';
+        outputEl.innerHTML = line.output.replace(/\n/g, '<br>');
+        terminalBody.appendChild(outputEl);
+
+        await new Promise(r => setTimeout(r, 600));
+    }
+
+    const finalLine = document.createElement('div');
+    finalLine.className = 'terminal-line';
+    finalLine.innerHTML = `<span class="terminal-prompt">$</span> <span class="terminal-cursor">█</span>`;
+    terminalBody.appendChild(finalLine);
+
+    // Restart after delay
+    setTimeout(runTerminal, 10000);
+}
+
+window.addEventListener('load', () => {
+    setTimeout(runTerminal, 1000);
+});
 
 console.log('%c👋 Welcome to my portfolio!', 'color: #6C63FF; font-size: 20px; font-weight: bold;');
 console.log('%cBuilt with ❤️ by Balaji Reddy Pothapu', 'color: #9898b0; font-size: 14px;');
